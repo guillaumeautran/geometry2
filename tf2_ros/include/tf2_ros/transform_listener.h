@@ -82,7 +82,7 @@ private:
   {
     while (using_dedicated_thread_)
     {
-      tf_message_callback_queue_.callAvailable(ros::WallDuration(0.01));
+      tf_message_callback_queue_.callAvailable(ros::WallDuration(0.1));
     }
   };
 
